@@ -14,18 +14,15 @@ window.onload = function() {
     let dom =[".com", ".es"];
 
    for (let i = 0; i < pronoun.length; i++) {
-     const pronombre = pronoun[i];
     
-      for (let ia = 0; ia < adj.length; ia++) {
-        const adjetivo = adj[ia];
+      for (let ia = 0; ia < adj.length; ia++) {       
 
         for (let inon = 0; inon < noun.length; inon++) {
-         const sustantivo = noun[inon];
+         
  
          for (let id = 0; id < dom.length; id++){
-           const dominio = dom[id];
 
-           let combination = pronombre + adjetivo + sustantivo + dominio;
+           let combination = pronoun[i] + adj[ia] + noun[inon] + dom[id];
             console.log(combination)
           }  
         }
